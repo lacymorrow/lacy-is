@@ -2,6 +2,7 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
 
+import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider, ThemeToggle } from "@/components/ui/theme";
 
 import "~/app/globals.css";
