@@ -1,28 +1,33 @@
 {
-  "name": "@lacy/auth-proxy",
+  "name": "@/lib",
   "private": true,
+  "version": "0.1.0",
   "type": "module",
-  "scripts": {
-    "build": "nitro build",
-    "clean": "rm -rf .turbo node_modules",
-    "lint": "eslint",
-    "format": "prettier --check . --ignore-path ../../.gitignore",
-    "typecheck": "tsc --noEmit"
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": [
+      "./src/*.tsx",
+      "./src/*.ts"
+    ]
   },
-  "dependencies": {
-    "@auth/core": "0.32.0"
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@lacy/eslint-config": "workspace:*",
     "@lacy/prettier-config": "workspace:*",
-    "@lacy/tailwind-config": "workspace:*",
     "@lacy/tsconfig": "workspace:*",
-    "@types/node": "^20.14.9",
     "eslint": "catalog:",
-    "h3": "^1.12.0",
-    "nitropack": "^2.9.7",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@lacy/prettier-config"
+  "prettier": "@lacy/prettier-config",
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "tailwind-merge": "^2.3.0"
+  }
 }

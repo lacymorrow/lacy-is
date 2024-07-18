@@ -10,8 +10,8 @@
     "cssVariables": true
   },
   "aliases": {
-    "utils": "@acme/ui",
-    "components": "src/",
-    "ui": "src/"
+    "utils": "@/lib/utils",
+    "components": "src/ui",
+    "ui": "src/ui"
   }
 }

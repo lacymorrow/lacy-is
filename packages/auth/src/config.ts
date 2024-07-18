@@ -1,14 +1,15 @@
+import { skipCSRFCheck } from "@auth/core";
+import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import type {
   DefaultSession,
   NextAuthConfig,
   Session as NextAuthSession,
 } from "next-auth";
-import { skipCSRFCheck } from "@auth/core";
-import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import Discord from "next-auth/providers/discord";
+import Github from "next-auth/providers/github";
 
-import { db } from "@acme/db/client";
-import { Account, Session, User } from "@acme/db/schema";
+import { db } from "@lacy/db/client";
+import { Account, Session, User } from "@lacy/db/schema";
 
 import { env } from "../env";
 
@@ -33,12 +34,15 @@ export const authConfig = {
   // In development, we need to skip checks to allow Expo to work
   ...(!isSecureContext
     ? {
-        skipCSRFCheck: skipCSRFCheck,
-        trustHost: true,
-      }
+      skipCSRFCheck: skipCSRFCheck,
+      trustHost: true,
+    }
     : {}),
   secret: env.AUTH_SECRET,
-  providers: [Discord],
+  providers: [
+    ...(env?.AUTH_DISCORD_ID && env?.AUTH_DISCORD_SECRET ? [Discord] : []),
+    ...(env?.AUTH_GITHUB_CLIENT_ID && env?.AUTH_GITHUB_CLIENT_SECRET ? [Github] : []),
+  ],
   callbacks: {
     session: (opts) => {
       if (!("user" in opts))
@@ -62,11 +66,11 @@ export const validateToken = async (
   const session = await adapter.getSessionAndUser?.(sessionToken);
   return session
     ? {
-        user: {
-          ...session.user,
-        },
-        expires: session.session.expires.toISOString(),
-      }
+      user: {
+        ...session.user,
+      },
+      expires: session.session.expires.toISOString(),
+    }
     : null;
 };
 

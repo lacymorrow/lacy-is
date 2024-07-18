@@ -1,5 +1,5 @@
 {
-  "name": "@acme/expo",
+  "name": "@lacy/expo",
   "version": "0.1.0",
   "private": true,
   "main": "expo-router/entry",
@@ -43,11 +43,11 @@
     "superjson": "2.2.1"
   },
   "devDependencies": {
-    "@acme/api": "workspace:*",
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tailwind-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@lacy/api": "workspace:*",
+    "@lacy/eslint-config": "workspace:*",
+    "@lacy/prettier-config": "workspace:*",
+    "@lacy/tailwind-config": "workspace:*",
+    "@lacy/tsconfig": "workspace:*",
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/runtime": "^7.24.7",
@@ -58,5 +58,5 @@
     "tailwindcss": "^3.4.4",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@lacy/prettier-config"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@acme/eslint-config",
+  "name": "@lacy/eslint-config",
   "private": true,
   "version": "0.3.0",
   "type": "module",
@@ -23,11 +23,11 @@
     "typescript-eslint": "rc-v8"
   },
   "devDependencies": {
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@lacy/prettier-config": "workspace:*",
+    "@lacy/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@lacy/prettier-config"
 }

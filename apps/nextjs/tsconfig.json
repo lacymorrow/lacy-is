@@ -1,11 +1,12 @@
 {
-  "extends": "@acme/tsconfig/base.json",
+  "extends": "@lacy/tsconfig/base.json",
   "compilerOptions": {
+		"preserveSymlinks": true,
     "lib": ["es2022", "dom", "dom.iterable"],
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
     },
     "plugins": [{ "name": "next" }],
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
