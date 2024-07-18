@@ -213,6 +213,100 @@ importers:
         specifier: 'catalog:'
         version: 5.5.3
 
+  apps/lacy-is:
+    dependencies:
+      '@/components':
+        specifier: workspace:*
+        version: link:../../packages/shadcn
+      '@/lib':
+        specifier: workspace:*
+        version: link:../../packages/lib
+      '@lacy/api':
+        specifier: workspace:*
+        version: link:../../packages/api
+      '@lacy/auth':
+        specifier: workspace:*
+        version: link:../../packages/auth
+      '@lacy/db':
+        specifier: workspace:*
+        version: link:../../packages/db
+      '@lacy/validators':
+        specifier: workspace:*
+        version: link:../../packages/validators
+      '@t3-oss/env-nextjs':
+        specifier: ^0.10.1
+        version: 0.10.1(typescript@5.5.3)(zod@3.23.8)
+      '@tanstack/react-query':
+        specifier: ^5.49.2
+        version: 5.51.1(react@18.3.1)
+      '@trpc/client':
+        specifier: 11.0.0-rc.441
+        version: 11.0.0-rc.441(@trpc/server@11.0.0-rc.441)
+      '@trpc/react-query':
+        specifier: 11.0.0-rc.441
+        version: 11.0.0-rc.441(@tanstack/react-query@5.51.1(react@18.3.1))(@trpc/client@11.0.0-rc.441(@trpc/server@11.0.0-rc.441))(@trpc/server@11.0.0-rc.441)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@trpc/server':
+        specifier: 11.0.0-rc.441
+        version: 11.0.0-rc.441
+      geist:
+        specifier: ^1.3.0
+        version: 1.3.1(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      next:
+        specifier: ^14.2.4
+        version: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react:
+        specifier: catalog:react18
+        version: 18.3.1
+      react-dom:
+        specifier: catalog:react18
+        version: 18.3.1(react@18.3.1)
+      superjson:
+        specifier: 2.2.1
+        version: 2.2.1
+      zod:
+        specifier: 'catalog:'
+        version: 3.23.8
+    devDependencies:
+      '@lacy/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+      '@lacy/prettier-config':
+        specifier: workspace:*
+        version: link:../../tooling/prettier
+      '@lacy/tailwind-config':
+        specifier: workspace:*
+        version: link:../../tooling/tailwind
+      '@lacy/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/typescript
+      '@types/node':
+        specifier: ^20.14.9
+        version: 20.14.10
+      '@types/react':
+        specifier: catalog:react18
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: catalog:react18
+        version: 18.3.0
+      dotenv-cli:
+        specifier: ^7.4.2
+        version: 7.4.2
+      eslint:
+        specifier: 'catalog:'
+        version: 9.7.0
+      jiti:
+        specifier: ^1.21.6
+        version: 1.21.6
+      prettier:
+        specifier: 'catalog:'
+        version: 3.3.3
+      tailwindcss:
+        specifier: ^3.4.4
+        version: 3.4.4(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3))
+      typescript:
+        specifier: 'catalog:'
+        version: 5.5.3
+
   apps/nextjs:
     dependencies:
       '@/components':

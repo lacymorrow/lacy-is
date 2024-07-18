@@ -11,7 +11,7 @@ import Github from "next-auth/providers/github";
 import { db } from "@lacy/db/client";
 import { Account, Session, User } from "@lacy/db/schema";
 
-import { env } from "../env";
+import { env } from "@lacy/auth/env";
 
 declare module "next-auth" {
   interface Session {

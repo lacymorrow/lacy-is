@@ -4,32 +4,30 @@ import type { Metadata, Viewport } from "next";
 
 import { ThemeProvider, ThemeToggle } from "@/components/ui/theme";
 
-import { TRPCReactProvider } from "~/trpc/react";
-
 import "~/app/globals.css";
 
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { env } from "~/env";
-import { Toaster } from "@/components/ui/toast";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     env.VERCEL_ENV === "production"
-      ? "https://turbo.t3.gg"
+      ? (env.VERCEL_URL || "https://lacy.is")
       : "http://localhost:3000",
   ),
-  title: "Create T3 Turbo",
-  description: "Simple monorepo with shared backend for web & mobile apps",
+  title: "lacy.is",
+  description: "be a better person.",
   openGraph: {
-    title: "Create T3 Turbo",
-    description: "Simple monorepo with shared backend for web & mobile apps",
-    url: "https://create-t3-turbo.vercel.app",
-    siteName: "Create T3 Turbo",
+    title: "lacy.is",
+    description: "be a better person.",
+    url: "https://lacy.is",
+    siteName: "lacy.is",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@jullerino",
-    creator: "@jullerino",
+    site: "@lacy_is",
+    creator: "@lacy_is",
   },
 };
 
@@ -51,8 +49,8 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-
-          <TRPCReactProvider>{props.children}</TRPCReactProvider>
+          <Button>Click me</Button>
+          {props.children}
           <div className="absolute bottom-4 right-4">
             <ThemeToggle />
           </div>
@@ -60,6 +58,6 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           <Toaster />
         </ThemeProvider>
       </body>
-    </html >
+    </html>
   );
 }
