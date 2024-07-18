@@ -213,7 +213,7 @@ importers:
         specifier: 'catalog:'
         version: 5.5.3
 
-  apps/lacy-is:
+  apps/is:
     dependencies:
       '@/components':
         specifier: workspace:*

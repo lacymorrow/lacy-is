@@ -1,4 +1,4 @@
-import { P } from "@/components/common/p/p";
+import { P } from "~/components/common/p";
 
 const building = [
   {

@@ -1,13 +1,11 @@
+import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider, ThemeToggle } from "@/components/ui/theme";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
 
-import { Toaster } from "@/components/ui/sonner";
-import { ThemeProvider, ThemeToggle } from "@/components/ui/theme";
-
 import "~/app/globals.css";
 
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { env } from "~/env";
 
@@ -50,7 +48,6 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Button>Click me</Button>
           {props.children}
           <div className="absolute bottom-4 right-4">
             <ThemeToggle />

@@ -15,6 +15,26 @@ export default {
       },
     },
     extend: {
+      spacing: {
+        xs: "0.25rem",
+        sm: "0.5rem",
+        md: "1rem",
+        lg: "2rem",
+        xl: "4rem",
+        "img-sm": "10rem",
+        img: "20rem",
+        "img-md": "20rem",
+        "img-lg": "30rem",
+      },
+      transitionProperty: {
+        width: "width margin",
+        height: "height",
+        bg: "background-color",
+        display: "display opacity",
+        visibility: "visibility",
+        padding: "padding-top padding-right padding-bottom padding-left",
+      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
