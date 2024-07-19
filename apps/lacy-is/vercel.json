@@ -2,23 +2,5 @@
     "buildCommand": "pnpm with-env next build",
     "ignoreCommand": "pnpm dlx turbo-ignore",
     "cleanUrls": true,
-    "trailingSlash": false,
-    "rewrites": [
-        {
-            "source": "/og/",
-            "destination": "https://lacymorrow.com"
-        },
-        {
-            "source": "/og/:match*",
-            "destination": "https://lacymorrow.com/:match*"
-        },
-        {
-            "source": "/",
-            "destination": "https://lacy.is/"
-        },
-        {
-            "source": "/:match*",
-            "destination": "https://lacy.is/:match*"
-        }
-    ]
+    "trailingSlash": false
 }
