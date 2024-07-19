@@ -6,13 +6,13 @@ import { eventHandler, toWebRequest } from "h3";
 export default eventHandler(async (event) =>
   Auth(toWebRequest(event), {
     basePath: "/r",
-    secret: process.env.AUTH_SECRET,
+    secret: process.env.NEXTAUTH_SECRET,
     trustHost: !!process.env.VERCEL,
     redirectProxyUrl: process.env.AUTH_REDIRECT_PROXY_URL,
     providers: [
-      ...(process.env?.AUTH_DISCORD_ID && process.env?.AUTH_DISCORD_SECRET ? [
+      ...(process.env?.AUTH_DISCORD_CLIENT_ID && process.env?.AUTH_DISCORD_SECRET ? [
         Discord({
-          clientId: process.env.AUTH_DISCORD_ID,
+          clientId: process.env.AUTH_DISCORD_CLIENT_ID,
           clientSecret: process.env.AUTH_DISCORD_SECRET,
         }),
       ] : []),

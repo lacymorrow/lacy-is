@@ -38,9 +38,9 @@ export const authConfig = {
       trustHost: true,
     }
     : {}),
-  secret: env.AUTH_SECRET,
+  secret: env.NEXTAUTH_SECRET,
   providers: [
-    ...(env?.AUTH_DISCORD_ID && env?.AUTH_DISCORD_SECRET ? [Discord] : []),
+    ...(env?.AUTH_DISCORD_CLIENT_ID && env?.AUTH_DISCORD_SECRET ? [Discord] : []),
     ...(env?.AUTH_GITHUB_CLIENT_ID && env?.AUTH_GITHUB_CLIENT_SECRET ? [Github] : []),
   ],
   callbacks: {

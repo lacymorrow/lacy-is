@@ -68,13 +68,13 @@
     }
   },
   "globalEnv": [
-    "POSTGRES_URL",
-    "AUTH_DISCORD_CLIENT_ID",
+    "DATABASE_URL",
+    "AUTH_DISCORD_ID",
     "AUTH_DISCORD_CLIENT_SECRET",
     "AUTH_GITHUB_CLIENT_ID",
     "AUTH_GITHUB_CLIENT_SECRET",
     "AUTH_REDIRECT_PROXY_URL",
-    "AUTH_SECRET",
+    "NEXTAUTH_SECRET",
     "PORT"
   ],
   "globalPassThroughEnv": [
