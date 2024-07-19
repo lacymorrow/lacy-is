@@ -4,11 +4,11 @@
     "rewrites": [
         {
             "source": "/",
-            "destination": "https://lacy.is/"
+            "destination": "https://lacy-is.vercel.app/"
         },
         {
             "source": "/:match*",
-            "destination": "https://lacy.is/:match*"
+            "destination": "https://lacy-is.vercel.app/:match*"
         }
     ]
 }
