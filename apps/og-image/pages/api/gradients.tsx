@@ -30,7 +30,7 @@ export default function handler() {
             color: 'transparent',
           }}
         >
-          Develop
+          Go
         </div>
         <div
           style={{
@@ -40,7 +40,7 @@ export default function handler() {
             color: 'transparent',
           }}
         >
-          Preview
+          Build
         </div>
         <div
           style={{
@@ -50,7 +50,7 @@ export default function handler() {
             color: 'transparent',
           }}
         >
-          Ship
+          Things
         </div>
       </div>
     ),

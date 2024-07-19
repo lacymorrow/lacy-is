@@ -1,4 +1,4 @@
-import { P } from "~/components/common/p";
+import { Button } from "@/components/ui/button";
 import { isLive, precomputeFlags } from "~/feature-flags";
 
 const building = [
@@ -58,7 +58,9 @@ export default async function Home({ params }: { params: { code: string } }) {
           <p>I'm not live!</p>
         )}
 
-        <P className="fade-in-up">
+        <Button>Click me</Button>
+
+        <p className="fade-in-up">
           <span className="text-lg font-serif italic mr-1">
             Building things.
           </span>
@@ -66,9 +68,9 @@ export default async function Home({ params }: { params: { code: string } }) {
           <a href="https://www.twilio.com">Twilio</a>,{" "}
           <a href="https://www.longgame.com">LongGame</a>,{" "}
           <a href="https://www.viasat.com">Viasat</a>.
-        </P>
+        </p>
 
-        <P className="fade-in-up">
+        <p className="fade-in-up">
           I built{" "}
           <a
             className="outline-border outline-offset-2"
@@ -77,7 +79,7 @@ export default async function Home({ params }: { params: { code: string } }) {
             crossover
           </a>
           , a crosshair app.
-        </P>
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-md fade-in-up">
           <div className="">
@@ -114,7 +116,7 @@ export default async function Home({ params }: { params: { code: string } }) {
             .
           </p>
         </div>
-        {/*
+
         <div className="">
           <h2 className="text-muted-foreground text-sm font-serif italic">
             Past
@@ -125,7 +127,7 @@ export default async function Home({ params }: { params: { code: string } }) {
             Future
           </h2>
           <p>Looking for a patent attorney.</p>
-        </div> */}
+        </div>
 
         <div className="text-sm">
           My fiance is a{" "}

@@ -4,7 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
 
-import "~/app/globals.css";
+import "~/styles/globals.css";
 
 import { cn } from "@/lib/utils";
 import { env } from "~/env";
@@ -12,7 +12,7 @@ import { env } from "~/env";
 export const metadata: Metadata = {
   metadataBase: new URL(
     env.VERCEL_ENV === "production"
-      ? `https://${env.VERCEL_URL || "lacy.is"}`
+      ? `https://${env?.VERCEL_URL || "lacy.is"}`
       : "http://localhost:3000",
   ),
   title: "lacy.is",
