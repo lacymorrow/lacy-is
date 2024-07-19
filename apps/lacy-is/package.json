@@ -16,6 +16,7 @@
   "dependencies": {
     "@/components": "workspace:*",
     "@/lib": "workspace:*",
+    "@lacy/ui": "workspace:*",
     "@lacy/api": "workspace:*",
     "@lacy/auth": "workspace:*",
     "@lacy/db": "workspace:*",

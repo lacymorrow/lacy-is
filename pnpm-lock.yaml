@@ -233,6 +233,9 @@ importers:
       '@lacy/db':
         specifier: workspace:*
         version: link:../../packages/db
+      '@lacy/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@lacy/validators':
         specifier: workspace:*
         version: link:../../packages/validators
@@ -330,6 +333,9 @@ importers:
       '@lacy/db':
         specifier: workspace:*
         version: link:../../packages/db
+      '@lacy/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@lacy/validators':
         specifier: workspace:*
         version: link:../../packages/validators
@@ -598,7 +604,77 @@ importers:
         specifier: workspace:*
         version: link:../lib
       '@hookform/resolvers':
-        specifier: ^3.9.0
+        specifier: ^3.7.0
+        version: 3.9.0(react-hook-form@7.52.1(react@18.3.1))
+      '@radix-ui/react-dropdown-menu':
+        specifier: ^2.1.1
+        version: 2.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-icons':
+        specifier: ^1.3.0
+        version: 1.3.0(react@18.3.1)
+      '@radix-ui/react-label':
+        specifier: ^2.1.0
+        version: 2.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-slot':
+        specifier: ^1.1.0
+        version: 1.1.0(@types/react@18.3.3)(react@18.3.1)
+      class-variance-authority:
+        specifier: ^0.7.0
+        version: 0.7.0
+      next-themes:
+        specifier: ^0.3.0
+        version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-hook-form:
+        specifier: ^7.52.1
+        version: 7.52.1(react@18.3.1)
+      sonner:
+        specifier: ^1.5.0
+        version: 1.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tailwind-merge:
+        specifier: ^2.3.0
+        version: 2.4.0
+      tailwindcss-animate:
+        specifier: ^1.0.7
+        version: 1.0.7(tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3)))
+    devDependencies:
+      '@lacy/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+      '@lacy/prettier-config':
+        specifier: workspace:*
+        version: link:../../tooling/prettier
+      '@lacy/tailwind-config':
+        specifier: workspace:*
+        version: link:../../tooling/tailwind
+      '@lacy/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/typescript
+      '@types/react':
+        specifier: catalog:react18
+        version: 18.3.3
+      eslint:
+        specifier: 'catalog:'
+        version: 9.7.0
+      prettier:
+        specifier: 'catalog:'
+        version: 3.3.3
+      react:
+        specifier: catalog:react18
+        version: 18.3.1
+      tailwindcss:
+        specifier: ^3.4.4
+        version: 3.4.4(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3))
+      typescript:
+        specifier: 'catalog:'
+        version: 5.5.3
+      zod:
+        specifier: 'catalog:'
+        version: 3.23.8
+
+  packages/ui:
+    dependencies:
+      '@hookform/resolvers':
+        specifier: ^3.7.0
         version: 3.9.0(react-hook-form@7.52.1(react@18.3.1))
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.1.1

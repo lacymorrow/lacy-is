@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { isLive, precomputeFlags } from "~/feature-flags";
 
 const building = [
@@ -51,15 +50,6 @@ export default async function Home({ params }: { params: { code: string } }) {
     <main className="flex justify-center p-xl">
       <div className="flex flex-col gap-lg max-w-lg">
         <h1 className="text-foreground text-xl font-semibold">Lacy Morrow</h1>
-
-        {isLiveFlag ? (
-          <p>I'm live!</p>
-        ) : (
-          <p>I'm not live!</p>
-        )}
-
-        <Button>Click me</Button>
-
         <p className="fade-in-up">
           <span className="text-lg font-serif italic mr-1">
             Building things.
