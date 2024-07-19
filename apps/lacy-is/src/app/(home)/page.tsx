@@ -1,4 +1,5 @@
 import { P } from "~/components/common/p";
+import { isLive, precomputeFlags } from "~/feature-flags";
 
 const building = [
   {
@@ -44,11 +45,19 @@ const List = ({ items }: { items: ItemProps[] }) => {
   );
 };
 
-export default function Home() {
+export default async function Home({ params }: { params: { code: string } }) {
+  const isLiveFlag = await isLive(params.code, precomputeFlags);
   return (
     <main className="flex justify-center p-xl">
       <div className="flex flex-col gap-lg max-w-lg">
         <h1 className="text-foreground text-xl font-semibold">Lacy Morrow</h1>
+
+        {isLiveFlag ? (
+          <p>I'm live!</p>
+        ) : (
+          <p>I'm not live!</p>
+        )}
+
         <P className="fade-in-up">
           <span className="text-lg font-serif italic mr-1">
             Building things.

@@ -5,11 +5,11 @@
     "trailingSlash": false,
     "rewrites": [
         {
-            "source": "/og/",
+            "source": "/lacy/",
             "destination": "https://lacymorrow.com"
         },
         {
-            "source": "/og/:match*",
+            "source": "/lacy/:match*",
             "destination": "https://lacymorrow.com/:match*"
         },
         {
