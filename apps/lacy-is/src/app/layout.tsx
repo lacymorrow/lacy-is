@@ -12,7 +12,7 @@ import { env } from "~/env";
 export const metadata: Metadata = {
   metadataBase: new URL(
     env.VERCEL_ENV === "production"
-      ? ("https://lacy.is")
+      ? `https://${env.VERCEL_URL || "lacy.is"}`
       : "http://localhost:3000",
   ),
   title: "lacy.is",
