@@ -1,0 +1,20 @@
+{
+    "rewrites": [
+        {
+            "source": "/og/",
+            "destination": "https://lacymorrow.com"
+        },
+        {
+            "source": "/og/:match*",
+            "destination": "https://lacymorrow.com/:match*"
+        },
+        {
+            "source": "/",
+            "destination": "https://lacy.is/"
+        },
+        {
+            "source": "/:match*",
+            "destination": "https://lacy.is/:match*"
+        }
+    ]
+}
