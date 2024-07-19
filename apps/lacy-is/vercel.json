@@ -1,5 +1,6 @@
 {
     "buildCommand": "pnpm with-env next build",
+    "ignoreCommand": "pnpm dlx turbo-ignore",
     "cleanUrls": true,
     "trailingSlash": false,
     "rewrites": [
