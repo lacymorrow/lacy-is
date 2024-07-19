@@ -1,5 +1,5 @@
 {
-  "name": "vercel-og-nextjs",
+  "name": "og-image",
   "repository": "https://github.com/vercel/examples.git",
   "license": "MIT",
   "private": true,
@@ -16,7 +16,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
+    "@types/node": "catalog:",
     "@types/react": "catalog:react18",
     "typescript": "catalog:"
   }

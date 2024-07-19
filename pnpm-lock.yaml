@@ -6,6 +6,9 @@ settings:
 
 catalogs:
   default:
+    '@types/node':
+      specifier: ^20.14.9
+      version: 20.14.10
     eslint:
       specifier: ^9.6.0
       version: 9.7.0
@@ -71,7 +74,7 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@types/node':
-        specifier: ^20.14.9
+        specifier: 'catalog:'
         version: 20.14.10
       eslint:
         specifier: 'catalog:'
@@ -280,7 +283,7 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@types/node':
-        specifier: ^20.14.9
+        specifier: 'catalog:'
         version: 20.14.10
       '@types/react':
         specifier: catalog:react18
@@ -374,7 +377,7 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@types/node':
-        specifier: ^20.14.9
+        specifier: 'catalog:'
         version: 20.14.10
       '@types/react':
         specifier: catalog:react18
@@ -417,7 +420,7 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@types/node':
-        specifier: ^20.14.9
+        specifier: 'catalog:'
         version: 20.14.10
       '@types/react':
         specifier: catalog:react18

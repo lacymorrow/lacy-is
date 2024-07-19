@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -13,13 +14,13 @@ export default function Page() {
             // `VERCEL_URL` environment variable to get the deployment’s URL.
             // More info:
             // https://vercel.com/docs/concepts/projects/environment-variables
-            `${
-              process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : ''
+            `${process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : ''
             }/api/vercel`
           }
         />
       </Head>
       <h1>A page with Open Graph Image.</h1>
+      <Image src="/api/gradients" alt="OG Image" width={1200} height={630} />
     </div>
   )
 }
