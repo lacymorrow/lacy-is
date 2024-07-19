@@ -74,7 +74,7 @@
     "AUTH_GITHUB_CLIENT_ID",
     "AUTH_GITHUB_CLIENT_SECRET",
     "AUTH_REDIRECT_PROXY_URL",
-    "NEXTAUTH_SECRET",
+    "AUTH_SECRET",
     "PORT"
   ],
   "globalPassThroughEnv": [
