@@ -1,8 +1,14 @@
-# Goal
+# What if the US was "for the people", not "for the corporations"?
+
+## Data-driven politics
+
+Platform: Consumer policies that are transparent, accountable, and data-driven.
+
+## Goal
 
 To put the power of the US government back into the hands of the people, as intended by the Constitution.
 
-# Objectives
+### Objectives
 
 There are many beliefs but very few objectives.
 
@@ -17,6 +23,7 @@ There are many beliefs but very few objectives.
 - Money in politics
 
 ### Healthcare
+
 - Insurance tied to work
 - Prescription prices
 - Drug patents
